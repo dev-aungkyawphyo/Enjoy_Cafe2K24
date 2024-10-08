@@ -17,6 +17,13 @@
 		1D90F4782CB5AC5800DD3DC3 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4772CB5AC5800DD3DC3 /* HomeScreenViewController.swift */; };
 		1D90F47A2CB5AD1200DD3DC3 /* EnjoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4792CB5AD1200DD3DC3 /* EnjoyViewController.swift */; };
 		1D90F47C2CB5AD2A00DD3DC3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F47B2CB5AD2A00DD3DC3 /* Storyboarded.swift */; };
+		1D90F4822CB5B52800DD3DC3 /* EnjoyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4812CB5B52800DD3DC3 /* EnjoyTextField.swift */; };
+		1D90F4852CB5B7BB00DD3DC3 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4842CB5B7BB00DD3DC3 /* UITextField+Extensions.swift */; };
+		1D90F4872CB5B97E00DD3DC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4862CB5B97E00DD3DC3 /* Constants.swift */; };
+		1D90F4892CB5B9EC00DD3DC3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4882CB5B9EC00DD3DC3 /* UIColor+Extensions.swift */; };
+		1D90F48B2CB5BC5A00DD3DC3 /* EnjoyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48A2CB5BC5A00DD3DC3 /* EnjoyButton.swift */; };
+		1D90F48D2CB5D1C600DD3DC3 /* EnjoyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48C2CB5D1C600DD3DC3 /* EnjoyView.swift */; };
+		1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48E2CB5D2DA00DD3DC3 /* EnjoyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		1D90F4772CB5AC5800DD3DC3 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		1D90F4792CB5AD1200DD3DC3 /* EnjoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyViewController.swift; sourceTree = "<group>"; };
 		1D90F47B2CB5AD2A00DD3DC3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		1D90F4812CB5B52800DD3DC3 /* EnjoyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTextField.swift; sourceTree = "<group>"; };
+		1D90F4842CB5B7BB00DD3DC3 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITextField+Extensions.swift"; path = "Enjoy_Cafe2K24/Helpers/EnjoyUIComponents/UITextField+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1D90F4862CB5B97E00DD3DC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1D90F4882CB5B9EC00DD3DC3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1D90F48A2CB5BC5A00DD3DC3 /* EnjoyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyButton.swift; sourceTree = "<group>"; };
+		1D90F48C2CB5D1C600DD3DC3 /* EnjoyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyView.swift; sourceTree = "<group>"; };
+		1D90F48E2CB5D2DA00DD3DC3 /* EnjoyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,9 @@
 			children = (
 				1D90F4792CB5AD1200DD3DC3 /* EnjoyViewController.swift */,
 				1D90F47B2CB5AD2A00DD3DC3 /* Storyboarded.swift */,
+				1D90F4802CB5B4F000DD3DC3 /* EnjoyUIComponents */,
+				1D90F4832CB5B79700DD3DC3 /* Extensions */,
+				1D90F4862CB5B97E00DD3DC3 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -141,6 +158,26 @@
 				1D90F4772CB5AC5800DD3DC3 /* HomeScreenViewController.swift */,
 			);
 			path = HomeScreenModule;
+			sourceTree = "<group>";
+		};
+		1D90F4802CB5B4F000DD3DC3 /* EnjoyUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1D90F4812CB5B52800DD3DC3 /* EnjoyTextField.swift */,
+				1D90F48A2CB5BC5A00DD3DC3 /* EnjoyButton.swift */,
+				1D90F48C2CB5D1C600DD3DC3 /* EnjoyView.swift */,
+				1D90F48E2CB5D2DA00DD3DC3 /* EnjoyImageView.swift */,
+			);
+			path = EnjoyUIComponents;
+			sourceTree = "<group>";
+		};
+		1D90F4832CB5B79700DD3DC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D90F4842CB5B7BB00DD3DC3 /* UITextField+Extensions.swift */,
+				1D90F4882CB5B9EC00DD3DC3 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D90F48D2CB5D1C600DD3DC3 /* EnjoyView.swift in Sources */,
+				1D90F4852CB5B7BB00DD3DC3 /* UITextField+Extensions.swift in Sources */,
+				1D90F48B2CB5BC5A00DD3DC3 /* EnjoyButton.swift in Sources */,
 				1D90F47A2CB5AD1200DD3DC3 /* EnjoyViewController.swift in Sources */,
 				1D90F4722CB5AC3300DD3DC3 /* LoginScreenViewController.swift in Sources */,
 				1D90F47C2CB5AD2A00DD3DC3 /* Storyboarded.swift in Sources */,
+				1D90F4822CB5B52800DD3DC3 /* EnjoyTextField.swift in Sources */,
 				1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */,
 				1D90F4782CB5AC5800DD3DC3 /* HomeScreenViewController.swift in Sources */,
+				1D90F4892CB5B9EC00DD3DC3 /* UIColor+Extensions.swift in Sources */,
+				1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */,
+				1D90F4872CB5B97E00DD3DC3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
