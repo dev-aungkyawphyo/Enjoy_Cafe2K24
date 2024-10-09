@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8D01C12CB70B7900A17642 /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C02CB70B7900A17642 /* PasswordType.swift */; };
+		1D8D01C32CB70B8400A17642 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C22CB70B8400A17642 /* ValidationError.swift */; };
+		1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C42CB70B8F00A17642 /* ValidationService.swift */; };
 		1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4532CB5A58F00DD3DC3 /* AppDelegate.swift */; };
 		1D90F45D2CB5A59000DD3DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D90F45C2CB5A59000DD3DC3 /* Assets.xcassets */; };
 		1D90F4602CB5A59000DD3DC3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D90F45F2CB5A59000DD3DC3 /* Base */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8D01C02CB70B7900A17642 /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
+		1D8D01C22CB70B8400A17642 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		1D8D01C42CB70B8F00A17642 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1D90F4502CB5A58F00DD3DC3 /* Enjoy_Cafe2K24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enjoy_Cafe2K24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90F4532CB5A58F00DD3DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D90F45C2CB5A59000DD3DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D8D01BF2CB70B1200A17642 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				1D8D01C02CB70B7900A17642 /* PasswordType.swift */,
+				1D8D01C22CB70B8400A17642 /* ValidationError.swift */,
+				1D8D01C42CB70B8F00A17642 /* ValidationService.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		1D90F4472CB5A58F00DD3DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 				1D90F4802CB5B4F000DD3DC3 /* EnjoyUIComponents */,
 				1D90F4832CB5B79700DD3DC3 /* Extensions */,
 				1D90F4862CB5B97E00DD3DC3 /* Constants.swift */,
+				1D8D01BF2CB70B1200A17642 /* Validation */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,9 +136,9 @@
 		1D90F46A2CB5A7E000DD3DC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D90F45E2CB5A59000DD3DC3 /* LaunchScreen.storyboard */,
 				1D90F46F2CB5AB8A00DD3DC3 /* LoginScreenModule */,
 				1D90F4702CB5ABB300DD3DC3 /* HomeScreenModule */,
-				1D90F45E2CB5A59000DD3DC3 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,9 +279,12 @@
 				1D90F4822CB5B52800DD3DC3 /* EnjoyTextField.swift in Sources */,
 				1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */,
 				1D90F4782CB5AC5800DD3DC3 /* HomeScreenViewController.swift in Sources */,
+				1D8D01C32CB70B8400A17642 /* ValidationError.swift in Sources */,
 				1D90F4892CB5B9EC00DD3DC3 /* UIColor+Extensions.swift in Sources */,
+				1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */,
 				1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */,
 				1D90F4872CB5B97E00DD3DC3 /* Constants.swift in Sources */,
+				1D8D01C12CB70B7900A17642 /* PasswordType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
