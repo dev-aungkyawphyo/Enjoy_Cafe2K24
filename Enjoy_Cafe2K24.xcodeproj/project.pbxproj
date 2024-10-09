@@ -119,9 +119,9 @@
 		1D90F46A2CB5A7E000DD3DC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D90F45E2CB5A59000DD3DC3 /* LaunchScreen.storyboard */,
 				1D90F46F2CB5AB8A00DD3DC3 /* LoginScreenModule */,
 				1D90F4702CB5ABB300DD3DC3 /* HomeScreenModule */,
-				1D90F45E2CB5A59000DD3DC3 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";

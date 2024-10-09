@@ -33,7 +33,7 @@ class EnjoyButton: UIButton {
     private func configure() {
         self.setTitleColor(.appColor(.btnTextColor), for: .normal)
         self.backgroundColor = .appColor(.primaryColor)
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 22
     }
     
 }
