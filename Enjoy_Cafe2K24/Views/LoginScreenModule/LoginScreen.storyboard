@@ -37,6 +37,9 @@
                                                 <state key="normal" title="Forgot Password?">
                                                     <color key="titleColor" name="PrimaryTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgotPasswordBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hSd-ca-hib"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfN-nm-L8T">
                                                 <rect key="frame" x="246" y="0.0" width="67" height="34"/>
@@ -45,6 +48,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" name="PrimaryTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TFa-Ht-tIr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -154,6 +160,9 @@
                                                 <real key="value" value="22"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kMI-9X-bw5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -200,6 +209,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="fjl-kz-Z1I">
+            <size key="intrinsicContentSize" width="44" height="34"/>
+        </designable>
         <designable name="qdA-fR-umd">
             <size key="intrinsicContentSize" width="62.333333333333336" height="18.666666666666668"/>
         </designable>
