@@ -48,17 +48,6 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29p-gz-Uv4" customClass="EnjoyButton" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
-                                        <rect key="frame" x="129.66666666666666" y="324" width="93.666666666666657" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="sdB-uC-PNg"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title=" Login">
-                                            <color key="baseForegroundColor" name="BtnTextColor"/>
-                                            <color key="baseBackgroundColor" name="PrimaryColor"/>
-                                        </buttonConfiguration>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q0q-Fy-dCL">
                                         <rect key="frame" x="20" y="130" width="313" height="120"/>
                                         <subviews>
@@ -149,19 +138,36 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-kz-Z1I" customClass="EnjoyButton" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
+                                        <rect key="frame" x="129.66666666666666" y="324" width="93.666666666666657" height="45"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="kJ8-k2-wPj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" name="BtnTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="GGL-JR-xz1" firstAttribute="top" secondItem="q0q-Fy-dCL" secondAttribute="bottom" constant="20" id="2bF-E4-H6p"/>
                                     <constraint firstAttribute="trailing" secondItem="GGL-JR-xz1" secondAttribute="trailing" constant="20" id="2nT-lx-Xyc"/>
-                                    <constraint firstItem="29p-gz-Uv4" firstAttribute="centerX" secondItem="q0q-Fy-dCL" secondAttribute="centerX" id="59q-QA-fun"/>
+                                    <constraint firstItem="fjl-kz-Z1I" firstAttribute="centerX" secondItem="q0q-Fy-dCL" secondAttribute="centerX" id="4R7-8a-UjG"/>
                                     <constraint firstItem="GGL-JR-xz1" firstAttribute="leading" secondItem="5dA-Tu-Rwl" secondAttribute="leading" constant="20" id="8ef-eO-HUj"/>
                                     <constraint firstItem="a6g-ND-gWO" firstAttribute="top" secondItem="5dA-Tu-Rwl" secondAttribute="top" constant="40" id="Gdx-W2-1Ak"/>
+                                    <constraint firstItem="fjl-kz-Z1I" firstAttribute="top" secondItem="GGL-JR-xz1" secondAttribute="bottom" constant="20" id="JAW-bg-jag"/>
                                     <constraint firstItem="q0q-Fy-dCL" firstAttribute="leading" secondItem="5dA-Tu-Rwl" secondAttribute="leading" constant="20" id="JB4-GB-0eD"/>
                                     <constraint firstAttribute="trailing" secondItem="a6g-ND-gWO" secondAttribute="trailing" constant="20" id="KW5-YY-PiI"/>
-                                    <constraint firstItem="29p-gz-Uv4" firstAttribute="width" secondItem="q0q-Fy-dCL" secondAttribute="width" multiplier="0.3" id="MnZ-Qs-1qm"/>
+                                    <constraint firstItem="fjl-kz-Z1I" firstAttribute="width" secondItem="q0q-Fy-dCL" secondAttribute="width" multiplier="0.3" id="UmE-Jw-pvO"/>
                                     <constraint firstAttribute="trailing" secondItem="q0q-Fy-dCL" secondAttribute="trailing" constant="20" id="aRV-IM-kXi"/>
-                                    <constraint firstItem="29p-gz-Uv4" firstAttribute="top" secondItem="GGL-JR-xz1" secondAttribute="bottom" constant="20" id="fYn-Gv-sbx"/>
                                     <constraint firstItem="a6g-ND-gWO" firstAttribute="leading" secondItem="5dA-Tu-Rwl" secondAttribute="leading" constant="20" id="tdE-nS-y7h"/>
                                     <constraint firstItem="q0q-Fy-dCL" firstAttribute="top" secondItem="a6g-ND-gWO" secondAttribute="bottom" constant="60" id="uV2-gh-Kuh"/>
                                 </constraints>
@@ -194,9 +200,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="29p-gz-Uv4">
-            <size key="intrinsicContentSize" width="70" height="42.333333333333336"/>
-        </designable>
         <designable name="qdA-fR-umd">
             <size key="intrinsicContentSize" width="62.333333333333336" height="18.666666666666668"/>
         </designable>
