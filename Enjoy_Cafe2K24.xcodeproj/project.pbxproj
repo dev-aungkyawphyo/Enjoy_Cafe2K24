@@ -12,6 +12,10 @@
 		1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C42CB70B8F00A17642 /* ValidationService.swift */; };
 		1D8D01C82CB70DD000A17642 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C72CB70DD000A17642 /* RegisterScreenViewController.swift */; };
 		1D8D01CA2CB70DDB00A17642 /* RegisterScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D01C92CB70DDB00A17642 /* RegisterScreen.storyboard */; };
+		1D8D01CC2CB714FC00A17642 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01CB2CB714FC00A17642 /* LoginModel.swift */; };
+		1D8D01CE2CB7150B00A17642 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01CD2CB7150B00A17642 /* RegisterModel.swift */; };
+		1D8D01D02CB7151F00A17642 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01CF2CB7151F00A17642 /* LoginViewModel.swift */; };
+		1D8D01D22CB7152C00A17642 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01D12CB7152C00A17642 /* RegisterViewModel.swift */; };
 		1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F4532CB5A58F00DD3DC3 /* AppDelegate.swift */; };
 		1D90F45D2CB5A59000DD3DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D90F45C2CB5A59000DD3DC3 /* Assets.xcassets */; };
 		1D90F4602CB5A59000DD3DC3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D90F45F2CB5A59000DD3DC3 /* Base */; };
@@ -37,6 +41,10 @@
 		1D8D01C42CB70B8F00A17642 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1D8D01C72CB70DD000A17642 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		1D8D01C92CB70DDB00A17642 /* RegisterScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen.storyboard; sourceTree = "<group>"; };
+		1D8D01CB2CB714FC00A17642 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1D8D01CD2CB7150B00A17642 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		1D8D01CF2CB7151F00A17642 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1D8D01D12CB7152C00A17642 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1D90F4502CB5A58F00DD3DC3 /* Enjoy_Cafe2K24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enjoy_Cafe2K24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90F4532CB5A58F00DD3DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D90F45C2CB5A59000DD3DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +150,8 @@
 		1D90F4692CB5A7D900DD3DC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1D8D01CB2CB714FC00A17642 /* LoginModel.swift */,
+				1D8D01CD2CB7150B00A17642 /* RegisterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +170,8 @@
 		1D90F46B2CB5A7E900DD3DC3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1D8D01CF2CB7151F00A17642 /* LoginViewModel.swift */,
+				1D8D01D12CB7152C00A17642 /* RegisterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -293,13 +305,17 @@
 				1D8D01C82CB70DD000A17642 /* RegisterScreenViewController.swift in Sources */,
 				1D90F47C2CB5AD2A00DD3DC3 /* Storyboarded.swift in Sources */,
 				1D90F4822CB5B52800DD3DC3 /* EnjoyTextField.swift in Sources */,
+				1D8D01CE2CB7150B00A17642 /* RegisterModel.swift in Sources */,
+				1D8D01CC2CB714FC00A17642 /* LoginModel.swift in Sources */,
 				1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */,
+				1D8D01D22CB7152C00A17642 /* RegisterViewModel.swift in Sources */,
 				1D90F4782CB5AC5800DD3DC3 /* HomeScreenViewController.swift in Sources */,
 				1D8D01C32CB70B8400A17642 /* ValidationError.swift in Sources */,
 				1D90F4892CB5B9EC00DD3DC3 /* UIColor+Extensions.swift in Sources */,
 				1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */,
 				1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */,
 				1D90F4872CB5B97E00DD3DC3 /* Constants.swift in Sources */,
+				1D8D01D02CB7151F00A17642 /* LoginViewModel.swift in Sources */,
 				1D8D01C12CB70B7900A17642 /* PasswordType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

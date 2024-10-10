@@ -19,6 +19,7 @@ class LoginScreenViewController: EnjoyViewController {
     @IBOutlet weak var phoneNoErrorLabel: UILabel!
     @IBOutlet weak var passwordErrorLabel: UILabel!
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
