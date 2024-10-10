@@ -31,6 +31,9 @@
                                         <rect key="frame" x="96.666666666666686" y="-80" width="160" height="160"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="profileBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qMF-CW-gKc"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TS6-L3-ogN">
                                         <rect key="frame" x="20" y="120.00000000000003" width="313" height="249.99999999999997"/>
@@ -216,6 +219,9 @@
                                                 <real key="value" value="22"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rvE-dn-CPI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -237,16 +243,19 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbP-Ra-y2e">
-                                <rect key="frame" x="16" y="59" width="35" height="35"/>
+                                <rect key="frame" x="16" y="59" width="28" height="28"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Qqh-IL-NIg"/>
-                                    <constraint firstAttribute="width" constant="35" id="fH3-1W-HE8"/>
+                                    <constraint firstAttribute="height" constant="28" id="Qqh-IL-NIg"/>
+                                    <constraint firstAttribute="width" constant="28" id="fH3-1W-HE8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" name="BtnTextColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fn8-7T-MeM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
