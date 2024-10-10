@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: EnjoyViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
