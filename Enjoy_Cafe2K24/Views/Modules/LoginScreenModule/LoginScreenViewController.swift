@@ -67,7 +67,7 @@ class LoginScreenViewController: EnjoyViewController {
         if (viewModel?.inputs.clickedLoginButton(input: .init(phoneNo: phoneNoTextField.inputValue,
                                                            password: passwordTextField.inputValue))) != nil {
             if phoneNoTextField.text == "9764374935" && passwordTextField.text == "12345678" {
-                let vc = HomeScreenViewController.instantiate(storyboard: .home)
+                let vc = EnjoyTabBarViewController.instantiate(storyboard: .baseRouter)
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
