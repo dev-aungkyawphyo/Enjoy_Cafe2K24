@@ -33,6 +33,10 @@
 		1D90F48B2CB5BC5A00DD3DC3 /* EnjoyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48A2CB5BC5A00DD3DC3 /* EnjoyButton.swift */; };
 		1D90F48D2CB5D1C600DD3DC3 /* EnjoyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48C2CB5D1C600DD3DC3 /* EnjoyView.swift */; };
 		1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F48E2CB5D2DA00DD3DC3 /* EnjoyImageView.swift */; };
+		1DE33CDA2CBAE51B00FDC8E6 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE33CD92CBAE51B00FDC8E6 /* ProfileScreenViewController.swift */; };
+		1DE33CE02CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE33CDF2CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift */; };
+		1DE33CE22CBAE55800FDC8E6 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE33CE12CBAE55800FDC8E6 /* MapScreenViewController.swift */; };
+		1DE33CE42CBAE5D600FDC8E6 /* EnjoyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE33CE32CBAE5D600FDC8E6 /* EnjoyTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		1D90F48A2CB5BC5A00DD3DC3 /* EnjoyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyButton.swift; sourceTree = "<group>"; };
 		1D90F48C2CB5D1C600DD3DC3 /* EnjoyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyView.swift; sourceTree = "<group>"; };
 		1D90F48E2CB5D2DA00DD3DC3 /* EnjoyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyImageView.swift; sourceTree = "<group>"; };
+		1DE33CD92CBAE51B00FDC8E6 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		1DE33CDF2CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteScreenViewController.swift; sourceTree = "<group>"; };
+		1DE33CE12CBAE55800FDC8E6 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		1DE33CE32CBAE5D600FDC8E6 /* EnjoyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1D90F4792CB5AD1200DD3DC3 /* EnjoyViewController.swift */,
+				1DE33CE32CBAE5D600FDC8E6 /* EnjoyTabBarViewController.swift */,
 				1D90F47B2CB5AD2A00DD3DC3 /* Storyboarded.swift */,
 				1D90F4802CB5B4F000DD3DC3 /* EnjoyUIComponents */,
 				1D90F4832CB5B79700DD3DC3 /* Extensions */,
@@ -160,9 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				1D90F45E2CB5A59000DD3DC3 /* LaunchScreen.storyboard */,
-				1D90F46F2CB5AB8A00DD3DC3 /* LoginScreenModule */,
-				1D8D01C62CB70DBD00A17642 /* RegisterScreenModule */,
-				1D90F4702CB5ABB300DD3DC3 /* HomeScreenModule */,
+				1D90F4752CB5AC4900DD3DC3 /* HomeScreen.storyboard */,
+				1DE33CD52CBAE4C600FDC8E6 /* Modules */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +205,6 @@
 		1D90F4702CB5ABB300DD3DC3 /* HomeScreenModule */ = {
 			isa = PBXGroup;
 			children = (
-				1D90F4752CB5AC4900DD3DC3 /* HomeScreen.storyboard */,
 				1D90F4772CB5AC5800DD3DC3 /* HomeScreenViewController.swift */,
 			);
 			path = HomeScreenModule;
@@ -221,6 +228,43 @@
 				1D90F4882CB5B9EC00DD3DC3 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DE33CD52CBAE4C600FDC8E6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1D90F46F2CB5AB8A00DD3DC3 /* LoginScreenModule */,
+				1D8D01C62CB70DBD00A17642 /* RegisterScreenModule */,
+				1D90F4702CB5ABB300DD3DC3 /* HomeScreenModule */,
+				1DE33CD62CBAE4D000FDC8E6 /* MapScreenModule */,
+				1DE33CD72CBAE4E200FDC8E6 /* FavourteScreenModule */,
+				1DE33CD82CBAE4FC00FDC8E6 /* ProfileScreenModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1DE33CD62CBAE4D000FDC8E6 /* MapScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DE33CE12CBAE55800FDC8E6 /* MapScreenViewController.swift */,
+			);
+			path = MapScreenModule;
+			sourceTree = "<group>";
+		};
+		1DE33CD72CBAE4E200FDC8E6 /* FavourteScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DE33CDF2CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift */,
+			);
+			path = FavourteScreenModule;
+			sourceTree = "<group>";
+		};
+		1DE33CD82CBAE4FC00FDC8E6 /* ProfileScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DE33CD92CBAE51B00FDC8E6 /* ProfileScreenViewController.swift */,
+			);
+			path = ProfileScreenModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE33CE02CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift in Sources */,
 				1D90F48D2CB5D1C600DD3DC3 /* EnjoyView.swift in Sources */,
 				1D90F4852CB5B7BB00DD3DC3 /* UITextField+Extensions.swift in Sources */,
 				1D90F48B2CB5BC5A00DD3DC3 /* EnjoyButton.swift in Sources */,
@@ -305,6 +350,8 @@
 				1D8D01C82CB70DD000A17642 /* RegisterScreenViewController.swift in Sources */,
 				1D90F47C2CB5AD2A00DD3DC3 /* Storyboarded.swift in Sources */,
 				1D90F4822CB5B52800DD3DC3 /* EnjoyTextField.swift in Sources */,
+				1DE33CDA2CBAE51B00FDC8E6 /* ProfileScreenViewController.swift in Sources */,
+				1DE33CE42CBAE5D600FDC8E6 /* EnjoyTabBarViewController.swift in Sources */,
 				1D8D01CE2CB7150B00A17642 /* RegisterModel.swift in Sources */,
 				1D8D01CC2CB714FC00A17642 /* LoginModel.swift in Sources */,
 				1D90F4542CB5A58F00DD3DC3 /* AppDelegate.swift in Sources */,
@@ -312,6 +359,7 @@
 				1D90F4782CB5AC5800DD3DC3 /* HomeScreenViewController.swift in Sources */,
 				1D8D01C32CB70B8400A17642 /* ValidationError.swift in Sources */,
 				1D90F4892CB5B9EC00DD3DC3 /* UIColor+Extensions.swift in Sources */,
+				1DE33CE22CBAE55800FDC8E6 /* MapScreenViewController.swift in Sources */,
 				1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */,
 				1D90F48F2CB5D2DA00DD3DC3 /* EnjoyImageView.swift in Sources */,
 				1D90F4872CB5B97E00DD3DC3 /* Constants.swift in Sources */,
