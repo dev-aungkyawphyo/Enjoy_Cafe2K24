@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileScreenViewController: UIViewController {
+class ProfileScreenViewController: EnjoyViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

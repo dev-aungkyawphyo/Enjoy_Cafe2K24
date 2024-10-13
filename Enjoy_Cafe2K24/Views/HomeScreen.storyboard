@@ -23,6 +23,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devphoto" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-9h-0cZ" customClass="EnjoyImageView" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
                                         <rect key="frame" x="301" y="0.0" width="60" height="60"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="1nQ-3B-TQe"/>
                                             <constraint firstAttribute="height" constant="60" id="LFL-Mr-DMW"/>
@@ -32,6 +33,9 @@
                                         <rect key="frame" x="301" y="0.0" width="60" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="userImageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jmw-Un-aSk"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the best coffee for you" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhw-Fv-Gzu">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="60"/>
@@ -59,21 +63,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0L-in-iPh">
                                 <rect key="frame" x="16" y="139" width="361" height="45"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTh-Kb-AAQ">
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="LDD-oX-Km4">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
-                                        <color key="backgroundColor" name="SearchBarBGColor"/>
-                                        <color key="textColor" name="TertiaryTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="search"/>
-                                    </textField>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="lTQ-Ht-KWT"/>
+                                        </connections>
+                                    </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7hD-gY-Nkc"/>
-                                    <constraint firstAttribute="bottom" secondItem="pTh-Kb-AAQ" secondAttribute="bottom" id="9J3-uB-0A4"/>
-                                    <constraint firstItem="pTh-Kb-AAQ" firstAttribute="top" secondItem="J0L-in-iPh" secondAttribute="top" id="HVE-sz-1Rc"/>
-                                    <constraint firstAttribute="trailing" secondItem="pTh-Kb-AAQ" secondAttribute="trailing" id="Kl5-ce-0BQ"/>
-                                    <constraint firstItem="pTh-Kb-AAQ" firstAttribute="leading" secondItem="J0L-in-iPh" secondAttribute="leading" id="Z1g-1B-Xwh"/>
+                                    <constraint firstItem="LDD-oX-Km4" firstAttribute="top" secondItem="J0L-in-iPh" secondAttribute="top" id="Ggn-XO-A7E"/>
+                                    <constraint firstAttribute="bottom" secondItem="LDD-oX-Km4" secondAttribute="bottom" id="IY4-hJ-2wL"/>
+                                    <constraint firstAttribute="trailing" secondItem="LDD-oX-Km4" secondAttribute="trailing" id="fsn-wA-ZRL"/>
+                                    <constraint firstItem="LDD-oX-Km4" firstAttribute="leading" secondItem="J0L-in-iPh" secondAttribute="leading" id="vX6-aL-AFn"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="om4-dY-qCK">
@@ -153,6 +157,9 @@
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                                                     <color key="baseForegroundColor" name="PrimaryColor"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="viewAllButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9z8-sj-bSG"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -209,6 +216,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icon01" id="9A6-qQ-EcX"/>
+                    <connections>
+                        <outlet property="introLabel" destination="xhw-Fv-Gzu" id="J5T-hm-Snf"/>
+                        <outlet property="productCollectionView" destination="HkJ-sZ-9qa" id="KfW-UV-J4D"/>
+                        <outlet property="searchBar" destination="LDD-oX-Km4" id="xFK-lc-wI4"/>
+                        <outlet property="shopCollectionView" destination="O0R-wx-Nyb" id="JOl-04-Jaj"/>
+                        <outlet property="userImageView" destination="hiD-9h-0cZ" id="6dg-Bb-fLO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,9 +330,6 @@
         </namedColor>
         <namedColor name="PrimaryTextColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="SearchBarBGColor">
-            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TertiaryTextColor">
             <color red="0.31799998879432678" green="0.31799998879432678" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
