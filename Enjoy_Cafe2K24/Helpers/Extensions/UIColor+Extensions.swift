@@ -8,7 +8,9 @@
 import UIKit
 
 extension UIColor {
+    
     static func appColor(_ name: AssetColor) -> UIColor? {
         return UIColor(named: name.rawValue)
     }
+    
 }

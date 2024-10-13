@@ -27,6 +27,7 @@ class LoginScreenViewController: EnjoyViewController {
         defaultSetup()
     }
     
+    // MARK: Additional Helpers
     private func defaultSetup() {
         setupTextField()
         binding()
