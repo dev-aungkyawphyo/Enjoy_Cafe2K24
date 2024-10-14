@@ -9,6 +9,13 @@ import UIKit
 
 class ProfileScreenViewController: EnjoyViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var userImageView: EnjoyImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var optionsTable: UITableView!
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +23,6 @@ class ProfileScreenViewController: EnjoyViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
