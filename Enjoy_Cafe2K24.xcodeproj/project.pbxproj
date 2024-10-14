@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D037A702CBD90CF008028B1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D037A6F2CBD90CF008028B1 /* ProfileTableViewCell.swift */; };
+		1D037A722CBD97E6008028B1 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D037A712CBD97E6008028B1 /* ProfileModel.swift */; };
 		1D8D01C12CB70B7900A17642 /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C02CB70B7900A17642 /* PasswordType.swift */; };
 		1D8D01C32CB70B8400A17642 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C22CB70B8400A17642 /* ValidationError.swift */; };
 		1D8D01C52CB70B8F00A17642 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D01C42CB70B8F00A17642 /* ValidationService.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D037A6F2CBD90CF008028B1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		1D037A712CBD97E6008028B1 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		1D8D01C02CB70B7900A17642 /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
 		1D8D01C22CB70B8400A17642 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		1D8D01C42CB70B8F00A17642 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
@@ -105,6 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D037A6D2CBD909E008028B1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1D037A6E2CBD90B0008028B1 /* ProfileTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1D037A6E2CBD90B0008028B1 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1D037A6F2CBD90CF008028B1 /* ProfileTableViewCell.swift */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
 		1D8D01BF2CB70B1200A17642 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +202,7 @@
 				1D8D01CB2CB714FC00A17642 /* LoginModel.swift */,
 				1D8D01CD2CB7150B00A17642 /* RegisterModel.swift */,
 				1DE33CE52CBB005500FDC8E6 /* HomeModel.swift */,
+				1D037A712CBD97E6008028B1 /* ProfileModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +318,7 @@
 		1DE33CEF2CBB1BBB00FDC8E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1D037A6D2CBD909E008028B1 /* TableViewCells */,
 				1DE33CF02CBB1BF900FDC8E6 /* CollectionViewCells */,
 			);
 			path = UIComponents;
@@ -408,11 +430,13 @@
 				1DE33CEC2CBB0F3600FDC8E6 /* UICollectionView+Extensions.swift in Sources */,
 				1DE33CE02CBAE54B00FDC8E6 /* FavouriteScreenViewController.swift in Sources */,
 				1D90F48D2CB5D1C600DD3DC3 /* EnjoyView.swift in Sources */,
+				1D037A702CBD90CF008028B1 /* ProfileTableViewCell.swift in Sources */,
 				1D90F4852CB5B7BB00DD3DC3 /* UITextField+Extensions.swift in Sources */,
 				1D90F48B2CB5BC5A00DD3DC3 /* EnjoyButton.swift in Sources */,
 				1D90F47A2CB5AD1200DD3DC3 /* EnjoyViewController.swift in Sources */,
 				1DE2498C2CBC51B700D325CB /* UIView+Extensions.swift in Sources */,
 				1D90F4722CB5AC3300DD3DC3 /* LoginScreenViewController.swift in Sources */,
+				1D037A722CBD97E6008028B1 /* ProfileModel.swift in Sources */,
 				1DE33CFB2CBB1C8800FDC8E6 /* ShopCollectionViewCell.swift in Sources */,
 				1D8D01C82CB70DD000A17642 /* RegisterScreenViewController.swift in Sources */,
 				1D90F47C2CB5AD2A00DD3DC3 /* Storyboarded.swift in Sources */,

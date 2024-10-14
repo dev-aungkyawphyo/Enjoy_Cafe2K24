@@ -21,9 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S73-Ii-EyY">
                                 <rect key="frame" x="16" y="59" width="361" height="60"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devphoto" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-9h-0cZ" customClass="EnjoyImageView" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devphoto" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-9h-0cZ" customClass="EnjoyImageView" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
                                         <rect key="frame" x="301" y="0.0" width="60" height="60"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="1nQ-3B-TQe"/>
                                             <constraint firstAttribute="height" constant="60" id="LFL-Mr-DMW"/>
@@ -282,14 +281,92 @@
                     <view key="view" contentMode="scaleToFill" id="E9V-Yd-wc2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH8-VH-qge" customClass="EnjoyView" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gui-k6-qCi">
+                                        <rect key="frame" x="166" y="67" width="61.333333333333343" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devphoto" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-9f-LY8" customClass="EnjoyImageView" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
+                                        <rect key="frame" x="156.66666666666666" y="101" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="IUg-qq-0bS"/>
+                                            <constraint firstAttribute="width" secondItem="A4r-9f-LY8" secondAttribute="height" multiplier="1:1" id="hlX-uT-gfS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BXJ-DU-FqC">
+                                        <rect key="frame" x="20" y="201" width="353" height="48.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aung Kyaw Phyo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-tv-cZI">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" name="PrimaryTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dev.aungkyawphyo@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEi-QG-aVk">
+                                                <rect key="frame" x="0.0" y="26.666666666666657" width="353" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="TertiaryTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A4r-9f-LY8" firstAttribute="centerX" secondItem="Gui-k6-qCi" secondAttribute="centerX" id="3eq-oc-otO"/>
+                                    <constraint firstItem="BXJ-DU-FqC" firstAttribute="top" secondItem="A4r-9f-LY8" secondAttribute="bottom" constant="20" id="4Yb-Bz-dtD"/>
+                                    <constraint firstItem="BXJ-DU-FqC" firstAttribute="centerX" secondItem="A4r-9f-LY8" secondAttribute="centerX" id="4zI-Md-zeS"/>
+                                    <constraint firstItem="Gui-k6-qCi" firstAttribute="centerX" secondItem="GH8-VH-qge" secondAttribute="centerX" id="FYJ-nE-g10"/>
+                                    <constraint firstItem="A4r-9f-LY8" firstAttribute="top" secondItem="Gui-k6-qCi" secondAttribute="bottom" constant="10" id="LVl-Dv-WDR"/>
+                                    <constraint firstAttribute="trailing" secondItem="BXJ-DU-FqC" secondAttribute="trailing" constant="20" id="Nh0-Ty-Vf6"/>
+                                    <constraint firstItem="BXJ-DU-FqC" firstAttribute="leading" secondItem="GH8-VH-qge" secondAttribute="leading" constant="20" id="QWt-pT-LMp"/>
+                                    <constraint firstAttribute="height" constant="280" id="SGU-b4-J89"/>
+                                    <constraint firstItem="Gui-k6-qCi" firstAttribute="top" secondItem="GH8-VH-qge" secondAttribute="top" constant="67" id="UeS-VQ-sbj"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-w5-TiW">
+                                <rect key="frame" x="0.0" y="280" width="393" height="489"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTableViewCell" id="0wx-Zp-Tk8" customClass="ProfileTableViewCell" customModule="Enjoy_Cafe2K24" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="55.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0wx-Zp-Tk8" id="JZ8-HY-nkL">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="55.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NXI-v7-eY8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ds2-w5-TiW" firstAttribute="bottom" secondItem="NXI-v7-eY8" secondAttribute="bottom" id="2e6-ej-AVp"/>
+                            <constraint firstItem="GH8-VH-qge" firstAttribute="trailing" secondItem="NXI-v7-eY8" secondAttribute="trailing" id="Gxw-IA-U2p"/>
+                            <constraint firstItem="GH8-VH-qge" firstAttribute="leading" secondItem="NXI-v7-eY8" secondAttribute="leading" id="OVE-wl-Vvs"/>
+                            <constraint firstItem="ds2-w5-TiW" firstAttribute="leading" secondItem="NXI-v7-eY8" secondAttribute="leading" id="San-Cz-fUP"/>
+                            <constraint firstItem="GH8-VH-qge" firstAttribute="top" secondItem="E9V-Yd-wc2" secondAttribute="top" id="ncw-9i-lZc"/>
+                            <constraint firstItem="ds2-w5-TiW" firstAttribute="top" secondItem="GH8-VH-qge" secondAttribute="bottom" id="rU8-10-7YC"/>
+                            <constraint firstItem="ds2-w5-TiW" firstAttribute="trailing" secondItem="NXI-v7-eY8" secondAttribute="trailing" id="uhC-JZ-uEk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="Zsp-DE-YTe"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="wEi-QG-aVk" id="RQ4-0L-daf"/>
+                        <outlet property="optionsTable" destination="ds2-w5-TiW" id="9f0-pT-YpG"/>
+                        <outlet property="userImageView" destination="A4r-9f-LY8" id="Q41-4l-axa"/>
+                        <outlet property="usernameLabel" destination="Xce-tv-cZI" id="zPZ-oB-HBq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1k-RX-u2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="159"/>
+            <point key="canvasLocation" x="2997.709923664122" y="158.45070422535213"/>
         </scene>
         <!--Enjoy Tab Bar View Controller-->
         <scene sceneID="cju-bW-v6T">
@@ -315,6 +392,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="A4r-9f-LY8">
+            <size key="intrinsicContentSize" width="421" height="421"/>
+        </designable>
         <designable name="hiD-9h-0cZ">
             <size key="intrinsicContentSize" width="421" height="421"/>
         </designable>

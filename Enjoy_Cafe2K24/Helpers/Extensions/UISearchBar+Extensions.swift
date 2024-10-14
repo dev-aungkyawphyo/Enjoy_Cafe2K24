@@ -15,7 +15,7 @@ extension UISearchBar {
         self.searchTextField.textColor = .lightGray
         self.tintColor = .lightGray
         self.searchTextField.borderStyle = .none
-        self.searchTextField.layer.cornerRadius = 2
+        self.searchTextField.layer.cornerRadius = 10
         self.searchTextField.layer.masksToBounds = true
         self.searchTextField.leftView?.tintColor = .lightGray
         self.placeholder = "Search"
